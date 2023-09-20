@@ -1,0 +1,88 @@
+body {
+    background-color: #FF3333; /* Màu đỏ */
+    font-family: 'Pacifico', cursive; /* Đổi font chữ thành Pacifico */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Màu chữ trắng */
+    overflow: hidden; /* Ngăn scroll bar xuất hiện */
+}
+
+/* Tạo animation sóng nền */
+@keyframes wave-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #FF3333, #FF9900);
+    background-size: 200% 100%;
+    animation: wave-animation 5s linear infinite;
+}
+
+/* Tạo animation chữ "Chúc mừng Trung Thu" */
+@keyframes zoom-in-out {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+h1 {
+    font-size: 36px;
+    animation: zoom-in-out 2s ease infinite;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+#lantern {
+    background-color: #FFD700; /* Màu vàng */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lantern-body {
+    background-color: #FF3333; /* Màu đỏ */
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lantern-light {
+    background-color: #FF9900; /* Màu cam */
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+#greeting {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #FF3333; /* Màu đỏ */
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
